@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*width와 height에 padding과 border 포함*/
     font-family: "Poppins", sans-serif;
 }
 
@@ -29,8 +29,8 @@ body {
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult {
-    opacity: 1;
-    z-index: 5;
+    opacity: 1; /*투명도*/
+    z-index: 5; /*스택의 순서*/
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }

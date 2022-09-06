@@ -1,71 +1,32 @@
 let questions = [
     {
         numb: 1,
-        question: "What does HTML stand for?",
-        answer: "Hyper Text Markup Language",
-        options: [
-            "Hyper Text Preprocessor",
-            "Hyper Text Markup Language",
-            "Hyper Text Multiple Language",
-            "Hyper Tool Multi Language",
-        ],
+        question: "(147 - 59 - 72) × 7",
+        answer: "112",
+        options: ["102", "122", "92", "112"],
     },
     {
         numb: 2,
-        question: "What does CSS stand for?",
-        answer: "Cascading Style Sheet",
-        options: [
-            "Common Style Sheet",
-            "Colorful Style Sheet",
-            "Computer Style Sheet",
-            "Cascading Style Sheet",
-        ],
+        question: "39 × 4 ÷ 6 -127 + 100",
+        answer: "-1",
+        options: ["1", "0", "-1", "-2"],
     },
     {
         numb: 3,
-        question: "What does PHP stand for?",
-        answer: "Hypertext Preprocessor",
-        options: [
-            "Hypertext Preprocessor",
-            "Hypertext Programming",
-            "Hypertext Preprogramming",
-            "Hometext Preprocessor",
-        ],
+        question: "900 - 123 - 456 - 789",
+        answer: "-468",
+        options: ["-468", "-466", "-470", "-469"],
     },
     {
         numb: 4,
-        question: "What does SQL stand for?",
-        answer: "Structured Query Language",
-        options: [
-            "Stylish Question Language",
-            "Stylesheet Query Language",
-            "Statement Question Language",
-            "Structured Query Language",
-        ],
+        question: "4³ × 7 － 348 + 157",
+        answer: "605",
+        options: ["608", "603", "607", "605"],
     },
     {
         numb: 5,
-        question: "What does XML stand for?",
-        answer: "eXtensible Markup Language",
-        options: [
-            "eXtensible Markup Language",
-            "eXecutable Multiple Language",
-            "eXTra Multi-Program Language",
-            "eXamine Multiple Language",
-        ],
+        question: "3 × 7 × 9 × 4 ",
+        answer: "756",
+        options: ["412", "756", "848", "520"],
     },
-    // you can uncomment the below codes and make duplicate as more as you want to add question
-    // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
-
-    //   {
-    //   numb: 6,
-    //   question: "Your Question is Here",
-    //   answer: "Correct answer of the question is here",
-    //   options: [
-    //     "Option 1",
-    //     "option 2",
-    //     "option 3",
-    //     "option 4"
-    //   ]
-    // },
 ];

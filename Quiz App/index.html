@@ -3,92 +3,87 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Awesome Quiz App</title>
+        <title>Math Quiz App</title>
         <link rel="stylesheet" href="style.css" />
-        <!-- FontAweome CDN Link for Icons-->
+        <!-- FontAweome CDN 링크-->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
     </head>
     <body>
-        <!-- start Quiz button -->
-        <div class="start_btn"><button>Start Quiz</button></div>
+        <!-- 퀴즈 시작 버튼 -->
+        <div class="start_btn"><button>시작</button></div>
 
-        <!-- Info Box -->
+        <!-- 퀴즈 정보 -->
         <div class="info_box">
-            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+            <div class="info-title"><span>규칙</span></div>
             <div class="info-list">
                 <div class="info">
-                    1. You will have only <span>15 seconds</span> per each
-                    question.
+                    1. 각 질문당 <span> 10초 </span> 만 주어집니다.
+                </div>
+                <div class="info">2. 답을 선택하면 취소할 수 없습니다.</div>
+                <div class="info">
+                    3. 시간이 지나면 답을 선택할 수 없습니다.
                 </div>
                 <div class="info">
-                    2. Once you select your answer, it can't be undone.
+                    4. 문제를 푸는 동안 퀴즈를 종료할 수 없습니다.
                 </div>
-                <div class="info">
-                    3. You can't select any option once time goes off.
-                </div>
-                <div class="info">
-                    4. You can't exit from the Quiz while you're playing.
-                </div>
-                <div class="info">
-                    5. You'll get points on the basis of your correct answers.
-                </div>
+                <div class="info">5. 문제를 맞힌 개수만큼 점수를 받습니다.</div>
             </div>
             <div class="buttons">
-                <button class="quit">Exit Quiz</button>
-                <button class="restart">Continue</button>
+                <button class="quit">종료</button>
+                <button class="restart">계속</button>
             </div>
         </div>
 
-        <!-- Quiz Box -->
+        <!-- 퀴즈 박스 -->
         <div class="quiz_box">
             <header>
-                <div class="title">Awesome Quiz Application</div>
+                <div class="title">Math Quiz App</div>
                 <div class="timer">
-                    <div class="time_left_txt">Time Left</div>
-                    <div class="timer_sec">15</div>
+                    <div class="time_left_txt">남은 시간</div>
+                    <div class="timer_sec">10</div>
                 </div>
                 <div class="time_line"></div>
             </header>
             <section>
                 <div class="que_text">
-                    <!-- Here I've inserted question from JavaScript -->
+                    <!-- 자바스크립트에서 질문 작성 -->
                 </div>
                 <div class="option_list">
-                    <!-- Here I've inserted options from JavaScript -->
+                    <!-- 자바스크립트에서 설정 작성 -->
                 </div>
             </section>
 
-            <!-- footer of Quiz Box -->
+            <!-- 퀴즈 박스 footer -->
             <footer>
                 <div class="total_que">
-                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                    <!-- 자바스크립트에서 문제 번호 작성 -->
                 </div>
-                <button class="next_btn">Next Que</button>
+                <button class="next_btn">다음</button>
             </footer>
         </div>
 
-        <!-- Result Box -->
+        <!-- 결과창 -->
         <div class="result_box">
             <div class="icon">
                 <i class="fas fa-crown"></i>
             </div>
-            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="complete_text">퀴즈를 완료했습니다!</div>
             <div class="score_text">
-                <!-- Here I've inserted Score Result from JavaScript -->
+                <!-- 자바스크립트에서 점수 작성 -->
             </div>
             <div class="buttons">
-                <button class="restart">Replay Quiz</button>
-                <button class="quit">Quit Quiz</button>
+                <button class="restart">다시 하기</button>
+                <button class="quit">퀴즈 종료</button>
             </div>
         </div>
 
-        <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+        <!-- 질문 및 옵션 자바스크립트 파일 -->
         <script src="js/questions.js"></script>
 
-        <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+        <!-- 문제 자바스크립트 파일 -->
         <script src="js/script.js"></script>
     </body>
 </html>
