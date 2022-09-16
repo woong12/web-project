@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    position: relative; /*일반적인 흐름에 따라 배치하되, 상하좌우 offset을 적용할 수 있다.*/
+    width: 100%; /*부모 요소에게 100%비례(꽉차게)하는 가로폭을 설정*/
+    min-height: 100vh; /*height 속성의 사용값이 자신의 값보다 작아지는걸 방지, 부모랑 상관없이 전체 영역을 다 씀*/
+    padding: 100px; /*안쪽 여백 100픽셀*/
+    display: flex; /*요소들을 자유자제로 움직이는 속성*/
+    justify-content: space-between; /*요소들 사이에 여유공간을 두고 배치*/
+    align-items: center; /*요소를 컨테이너의 가운데 배치*/
+    background: #0062be; /*배경색*/
+    transition: 0.5s; /*애니메이션 속도*/
+}
+
+header {
+    position: absolute; /*다른 요소와 더이상 상호작용 X*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px; /*세로 가로*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px; /*최대 너비*/
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none; /*리스트 앞에 점을 없애줌*/
+}
+
+header ul li a {
+    display: inline-block; /*나란히 배치되지만 간격 지정 가능*/
+    color: #fff;
+    font-weight: 400; /*굵기*/
+    margin-left: 40px; /*왼쪽 여백*/
+    text-decoration: none; /*밑줄 제거*/
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #fff;
+    font-size: 4em; /*px는 절대값이고 em은 상대값이다*/
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase; /*모든 글자를 대문자로 바꿈*/
+}
+
+.content .textBox h2 span {
+    font-size: 2em;
+}
+
+.content .textBox p {
+    color: #fff;
+}
