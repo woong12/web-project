@@ -9,4 +9,4 @@ https://quiz-crostata-8b41f5.netlify.app/
 https://pepsi-cola-a37600.netlify.app/
 <br>
 -그림판
-https://canvas-paintbrush.netlify.app/
+https://paintbrush-canvas.netlify.app/
